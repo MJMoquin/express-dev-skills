@@ -15,7 +15,6 @@ const skills = [
     return skills;
   }
 
-
   function getOne(idx) {
     return skills[idx];
   }
