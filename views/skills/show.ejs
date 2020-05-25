@@ -3,6 +3,9 @@
 <h2> ~ Skill ~</h2>
 <h3><%= skill.name %></h3>
 <h4>Skill Level: <%= skill.learned ? 'Kinda understand' : 'Still clueless' %></h4>
-<a href="/skills">Skills List</a>
+<form action="/skills/<%= idx %>?_method=DELETE" method="POST">
+    <button class="deleteButton" type="submit">Remove Skill</button>
+</form>
+<a href="/skills">Back to Skills</a>
 
 <%- include('../partials/footer') %>
